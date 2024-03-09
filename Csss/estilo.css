@@ -1,0 +1,214 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+
+}
+
+
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.104);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #ffffff; /* Color de fondo del menú */
+    z-index: 1000; /* Asegura que el menú esté sobre otros elementos */
+     
+}
+
+.logo {
+    max-width: 7rem;
+    
+}
+
+.nav-list {
+
+    display: flex;
+    list-style: none;
+    gap: 1rem;
+    
+}
+
+.nav-list a {
+    text-decoration: none;
+    color: black;
+}
+
+
+.desplegar-menu {
+    display: none;  /* con esto ocultamos el boton cuando no estamos en modo mobile*/
+}
+
+.cerrar-menu {
+    display: none;
+}
+
+.introduccion {
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10rem;
+    color: black;
+    
+    
+}
+
+.prenda-intro {
+    width: 30%;
+}
+
+.intro-tech {
+    display: flex;
+    justify-content: space-between;
+    padding: 50px;
+   
+}
+
+.intro-tech p,
+.intro-tech h5 {
+    padding: 2rem;
+}
+
+footer {
+    background-color: grey;
+    height: 200px;
+}
+
+#verCarrito a{
+    color: black;
+    display: flex;
+    cursor: pointer;
+    
+}
+
+.verCarrito{
+    cursor: pointer;
+}
+
+
+.formulario {
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    padding: 10rem;
+}
+
+.btn-enviar {
+    width: 10%;
+}
+
+.menu-footer a {
+    padding: 5px;
+    display: flex;
+    flex-direction: column; 
+    text-decoration: none;  
+    color: white;
+    list-style: none;
+}
+
+
+
+#Informacion-adicional{
+    display: flex;
+    justify-content: space-between;
+    padding: 5px;
+}
+
+.medios-pago img{
+    width: 25%;
+    height: 10%;
+}
+
+.redes img {
+    width: 5%;
+}
+
+@media screen and (max-width: 576px) {
+
+    .desplegar-menu,
+    .cerrar-menu {
+        display: block;
+        border:0 ;
+        font-size: 1rem;
+        background-color: transparent;
+        cursor: pointer;
+    }
+
+  
+
+    .desplegar-menu {
+        color: black;
+    }
+
+    nav {
+
+        opacity: 0; /*  1 esconedemos el menu*/
+        visibility: hidden; /* 2 escondido*/
+        display: flex;
+        flex-direction:column ;
+        align-items: end;
+        gap: 1rem;
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0; /* con esto logramos que el menu llegue hasta abajo*/
+        background-color: rgb(110, 106, 106);
+        padding:2rem ;
+        box-shadow: 0 0 0 100vmax rgba(109, 109, 110, 0.575);
+        z-index: 1000; /*superpone el menu por encima de lo que pongamos en el main*/
+    }
+
+    nav.visible{
+        opacity: 1; /*  3 lo hacemos visible de nuevo*/
+        visibility: visible;/* 4 visible*/
+    }
+
+    
+    
+
+    .nav-list {
+
+        flex-direction: column;
+        align-items: end;
+        
+    }
+
+    .nav-list a {
+        color: white;
+    }
+
+    .introduccion{
+        margin: 2rem;
+        padding: 1rem;
+    }
+
+    .prenda-intro {
+        width: 70%;
+    }
+
+    .intro-tech {
+        display: flex;
+        flex-direction: column;
+        margin: 1rem;
+        align-items: center;
+        
+    }
+
+   
+   
+    
+}
+
+
+
+

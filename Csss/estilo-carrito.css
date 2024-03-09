@@ -1,0 +1,211 @@
+
+/*LE DAMOS ESTILO A LA VENTANA DEL CARRITO Y LO POSICIONAMOS EN EL HEADER*/
+.modal-container {
+    width: 80%;
+    margin:0 10%;
+    max-height: 88vh;
+    color: white;
+    background-color: rgb(201, 196, 196);
+    display: flex;
+    align-items: center;
+    position: fixed;
+    overflow: auto;
+    z-index: 8;
+    top: 10vh;
+    flex-direction: column;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    z-index: 1000;
+    
+}
+
+
+/*SACAMOS LA BARRA DE SCROLL*/
+.modal-container::-webkit-scrollbar{
+    display: none;
+}
+
+.modal{
+    display: flex;
+    justify-content: space-around;
+    background-color: black;
+    color: white;
+    width: 100%;
+}
+
+.modal-title {
+    justify-self: start;
+}
+
+
+.modal-container > .content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 70%;
+    margin: 10px;
+}
+
+.modal-container > div > img{
+    height: 200px;
+    width: 150px;
+}
+
+
+.btn-comprar {
+    cursor: pointer;
+}
+
+.modal-btn {
+    cursor: pointer;
+}
+
+.totalCarrito{
+    color: black;
+    font-size: 15px;
+    padding: 20px;
+    text-align: center;
+    padding-top: 20px;
+}
+
+.btn-delete i{
+    color: red;
+    background-color: transparent;
+    
+
+}
+
+.cantidadCarrito {
+    display: none;
+}
+
+.restar  {
+    cursor: pointer;
+    width: 3%; 
+    background-color: white;
+}
+
+.sumar  {
+    cursor: pointer;
+    width: 3%;
+    background-color: white;
+}
+
+.content {
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif 
+
+}
+
+.verCarrito{
+    display: flex;
+}
+
+.btn-delete{
+    cursor: pointer;
+}
+@media screen and (max-width: 576px) {  
+
+.modal-container {
+    width: 90%;
+    margin:0 5%;
+    max-height: 88vh;
+    color: white;
+    background-color: rgb(201, 196, 196);
+    display: flex;
+    align-items: center;
+    position: fixed;
+    overflow: auto;
+    z-index: 8;
+    top: 10vh;
+    flex-direction: column;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    z-index: 1000;
+    
+}
+
+
+/*SACAMOS LA BARRA DE SCROLL*/
+.modal-container::-webkit-scrollbar{
+    display: none;
+}
+
+.modal{
+    display: flex;
+    justify-content: space-around;
+    background-color: black;
+    color: white;
+    width: 100%;
+}
+
+.modal-title {
+    justify-self: start;
+}
+
+
+.modal-container > .content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 70%;
+    margin: 20px;
+}
+
+.modal-container > div > img{
+    height: 200px;
+    width: 150px;
+}
+
+
+.btn-comprar {
+    cursor: pointer;
+}
+
+.modal-btn {
+    cursor: pointer;
+}
+
+.totalCarrito{
+    color: black;
+    font-size: 15px;
+    padding: 20px;
+    text-align: center;
+    padding-top: 20px;
+}
+
+.btn-delete i{
+    color: red;
+    background-color: transparent;
+    
+
+}
+
+.cantidadCarrito {
+    display: none;
+}
+
+.restar  {
+    cursor: pointer;
+    width: 5%; 
+    background-color: white;
+}
+
+.sumar  {
+    cursor: pointer;
+    width: 5%; 
+    background-color: white;
+   
+}
+
+.content {
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+   
+    
+}
+
+.verCarrito{
+    display: flex;
+}
+
+
+}

@@ -1,0 +1,62 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#container_productos {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content:space-between;
+    width: 100%;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    padding: 10%;
+    margin: 10 10%;
+
+}
+
+.clothes {
+    display: flex;
+    flex-direction: column;
+    margin: 5px;
+  
+    
+   
+}
+
+.clothes img {
+    padding: 30px
+}
+
+
+.btn-comprar {
+    background-color: black;
+    color: white;
+    border: 0px;
+    height: 20px;
+}
+
+
+
+@media screen and (max-width: 576px) {
+
+    #container_productos{
+
+        flex-direction: column;
+       
+
+    }
+
+    .clothes img{
+        height: 350px;
+        width: 320px;
+    }
+
+
+
+}
+
+
+

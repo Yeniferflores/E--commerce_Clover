@@ -1,0 +1,170 @@
+const listaProductos = [
+    {
+        id: 1,            
+        title: "Cargo Jacket",
+        img:"https://techwear-outfits.com/cdn/shop/products/xgxf-jacket-techwear-565_360x.webp?v=1674842342",
+        price: 6000,
+        detail: "Fabricado con materiales de primera calidad y funcional",
+        stock: 5,
+        cantidad: 1,
+        color: "Black"
+        
+    },
+    {
+        id: 2, 
+        title: "Cargo Jacket for woman",
+        img:"https://techwear-outfits.com/cdn/shop/products/cargo-utility-jacket-womens-techwear-882_360x.webp?v=1674846035",
+        detail: "Fabricado con materiales de primera calidad y funcional",
+        price: 10000,
+        stock:8,
+        cantidad: 1,
+        color: "Black",
+        
+    },
+    {
+        id: 3,
+        title: "Techwear Hood",
+        img: "https://techwear-outfits.com/cdn/shop/products/black-hoodie-streetwear-techwear-375_360x.webp?v=1674839970",
+        price: 9000,
+        detail:"Fabricado con materiales de primera calidad y funcional",
+        stock: 2,
+        cantidad: 1,
+        color: "Black",
+        
+    },
+    {
+        id: 4,
+        title: "Waterproof Techwear Pants",
+        img: "https://techwear-outfits.com/cdn/shop/products/tactical-cargo-pants-fashion-techwear-713_360x.webp?v=1674838722",
+        price: 5000,
+        detail: "Innovadores pantalones impermeables techwear con estilo futurista y táctico",
+        stock: 6,
+        cantidad: 1,
+        color: "Black",
+      
+    },
+    {
+        id: 5,            
+        title: "Cargo Jacket",
+        img:"https://techwear-outfits.com/cdn/shop/products/urban-techwear-jacket-techwear-759_360x.webp?v=1674847785",
+        price: 6000,
+        detail: "Fabricado con materiales de primera calidad y funcional",
+        stock: 5,
+        cantidad: 1,
+        color: "Black",
+        
+    },
+    {
+        id: 6, 
+        title: "Techwear one shoulder top",
+        img:"https://techwear-outfits.com/cdn/shop/products/techwear-one-sleeve-jacket-techwear-548_360x.webp?v=1675927187",
+        price: 5000,
+        detail: "Fabricado con materiales de primera calidad y funcional",
+        stock:8,
+        cantidad: 1,
+        color: "Black",
+      
+    },
+    {
+        id: 7,
+        title: "Techwear Pants for women",
+        img: "https://techwear-outfits.com/cdn/shop/products/womens-tactical-cargo-pants-techwear-456_360x.webp?v=1674846579",
+        price: 9000,
+        detail:"Fabricado con materiales de primera calidad y funcional",
+        stock: 2,
+        cantidad: 1,
+        color: "Black",
+       
+    },
+    {
+        id: 8,
+        title: "Waterproof Techwear Pants",
+        img: "https://techwear-outfits.com/cdn/shop/products/pocket-joggers-techwear-648_360x.webp?v=1674838625",
+        price: 5000,
+        detail: "Innovadores pantalones impermeables techwear con estilo futurista y táctico",
+        stock: 6,
+        cantidad: 1,
+        color: "Black",
+       
+    },
+    {
+        id: 9,
+        title: "Black Tech Hoodie",
+        img: "https://techwear-outfits.com/cdn/shop/products/black-tech-hoodie-techwear-823_360x.webp?v=1674845808",
+        price: 4000,
+        detail:"Completa tu atuendo técnico con esta mochila con múltiples bolsillos y compartimentos de almacenamiento",
+        stock: 10,
+        cantidad: 1,
+        color: "Black",
+        
+    },
+    {
+        id: 10,
+        title: "Oni Shirt",
+        img: "https://techwear-outfits.com/cdn/shop/files/oni-shirt-techwear-905_360x.webp?v=1691168873",
+        price: 5000,
+        detail: "Equípate con este estuche para celular y billetera. Una cartera táctica muy práctica para el uso diario y que se engancha al cinturón. Además, tiene múltiples compartimentos de almacenamiento para una organización óptima.",
+        stock: 15,
+        cantidad: 1,
+        color: "Black",
+        
+    },
+    {
+        id: 11,
+        title: "Technical shirt",
+        img: "https://techwear-outfits.com/cdn/shop/products/technical-shirt-techwear-540_360x.webp?v=1674845938",
+        price: 7000,
+        detail:"Equípate con esta gran riñonera Techwear para llevar en el cinturón o en la espalda para un amplio espacio de almacenamiento. Impermeable y con muchos bolsillos compartimentados, puedes guardar fácilmente tus objetos personales, artículos deportivos, así como gafas de sol, cartera y portátil.",
+        stock: 20,
+        cantidad: 1,
+        color: "Black",
+       
+    },
+    {
+        id: 12,
+        title: "Cargo Vest",
+        img: "https://techwear-outfits.com/cdn/shop/products/cargo-vest-techwear-778_360x.webp?v=1674842999",
+        price: 5000,
+        detail: "Bolso practico para el uso diario con multiples compartimentos para una eficiente organización.",
+        stock: 15,
+        cantidad: 1,
+        color: "Black",
+       
+    },
+    {
+        id: 13,
+        title: "Shirt",
+        img: "https://techwear-outfits.com/cdn/shop/products/sci-fi-shirt-techwear-405_360x.webp?v=1674843794",
+        price: 4000,
+        detail:"Con estos guantes de invierno teachwear, podras mantenerte abrigado y con estilo durante toda la temporada",
+        stock: 10,
+        cantidad: 1,
+        color: "Black",
+        
+    },
+    {
+        id: 14,
+        title: "Cargo Jacket for men",
+        img: "https://techwear-outfits.com/cdn/shop/products/cargo-pocket-jacket-techwear-356_360x.webp?v=1674837160",
+        price: 3000,
+        detail: "Con este gaiter de cuello y boca, podran cubrirte del frio",
+        stock: 11,
+        cantidad: 1,
+        color: "Black",
+        
+    },
+    {
+        id: 14,
+        title: "Gray Pants",
+        img: "https://techwear-outfits.com/cdn/shop/products/gray-tactical-pants-techwear-104_360x.webp?v=1674844041",
+        price: 3000,
+        detail: "Con este gaiter de cuello y boca, podran cubrirte del frio",
+        stock: 11,
+        cantidad: 1,
+        color: "Black",
+       
+    }
+
+
+
+]
